@@ -115,11 +115,11 @@ const minAmounts = {
 const networkConfig = {
     ethereum: {
         currencies: ['eth', 'usdt', 'usdc'],
-        contractAddress: '0xf48f44C44Ec043C7a51041Bd793e4917b73AaB19'
+        contractAddress: '0x057d15f69f04975f68de662dd66fea954872e380'
     },
     bnb: {
         currencies: ['bnb', 'usdt', 'usdc'],
-        contractAddress: '0xf48f44C44Ec043C7a51041Bd793e4917b73AaB19'
+        contractAddress: '0x057d15f69f04975f68de662dd66fea954872e380'
     }
 };
 
