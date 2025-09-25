@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$MASK - MetaMask Token</title>
+    <link rel="icon" type="image/png" href="MetaMask_Fox.svg.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="MetaMask_Fox.svg.png" alt="$MASK Logo">
+                    <span>$MASK</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#presale">Presale</a></li>
+                    <li><a href="#token">Token</a></li>
+                    <li><a href="#governance">Governance</a></li>
+                    <li><a href="#web3-services">Services</a></li>
+                    <li><a href="#web3-learning">Learn</a></li>
+                    <li><a href="#metamask-usd">mUSD</a></li>
+                    <li><a href="#metamask-card">Card</a></li>
+                    <li><a href="#portfolio-features">Portfolio</a></li>
+                    <li><a href="#security">Security</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-background">
+                <div class="constitution-overlay"></div>
+                <div class="blockchain-network"></div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>$MASK</h1>
+                    <h2>MetaMask Token</h2>
+                    <p class="slogan">Connect Web3 World, Master Ecosystem Future.</p>
+                    <div class="hero-buttons">
+                        <a href="#presale" class="btn btn-primary">Join Presale</a>
+                        <a href="#token" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <img src="MetaMask_Fox.svg.png" alt="MetaMask Fox" class="metamask-fox">
+                </div>
+            </div>
+        </section>
+
+        <section id="presale" class="presale">
+            <div class="container">
+                <h2>MetaMask Token Presale</h2>
+                <p class="presale-subtitle">Join the evolution of Web3 governance by participating in the official $MASK token presale.</p>
+                <div class="presale-content">
+                    <div class="presale-info">
+                        <h3>Presale Benefits</h3>
+                        <div class="presale-benefits-image">
+                            <img src="buy.png" alt="MetaMask Buy" class="benefits-image">
+                        </div>
+                        <ul class="presale-features">
+                            <li>✓ Secure & Verified: Conducted through official, audited smart contracts on Ethereum mainnet</li>
+                            <li>✓ Governance Access: Secure your voting rights in the MetaMask ecosystem from day one</li>
+                            <li class="presale-image-item">
+                                <img src="MetaMask_Security_Audits_and_Bug_Bounty_program.avif" alt="MetaMask Security Audits and Bug Bounty" class="benefits-image">
+                            </li>
+                            <li class="presale-certik">
+                                <span class="certik-text">AUDITS BY</span>
+                                <img src="certik.png" alt="Certik" class="certik-logo">
+                                <img src="logo1.png" alt="Additional Logo" class="certik-logo certik-logo-2">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="presale-form">
+                        <h4>Purchase $MASK</h4>
+                        
+                        <div class="price-info">
+                            <h5>Next Price Increase In</h5>
+                            <div class="countdown-timer">
+                                <div class="countdown-item">
+                                    <span id="days">04</span>
+                                    <label>Days</label>
+                                </div>
+                                <div class="countdown-separator">:</div>
+                                <div class="countdown-item">
+                                    <span id="hours">22</span>
+                                    <label>Hours</label>
+                                </div>
+                                <div class="countdown-separator">:</div>
+                                <div class="countdown-item">
+                                    <span id="minutes">47</span>
+                                    <label>Minutes</label>
+                                </div>
+                                <div class="countdown-separator">:</div>
+                                <div class="countdown-item">
+                                    <span id="seconds">26</span>
+                                    <label>Seconds</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="presale-stats">
+                            <div class="stat-item">
+                                <label>USD Raised:</label>
+                                <span class="stat-value">$2,658,893.57</span>
+                            </div>
+                            <div class="stat-item">
+                                <label>1 MASK =</label>
+                                <span class="stat-value">$0.0075</span>
+                            </div>
+                        </div>
+
+                        <div class="network-selection">
+                            <h5>Select Network & Currency</h5>
+                            <div class="network-options">
+                                <label class="network-option">
+                                    <input type="radio" name="network" value="ethereum" checked>
+                                    <span class="checkmark"></span>
+                                    Ethereum
+                                </label>
+                                <label class="network-option">
+                                    <input type="radio" name="network" value="bnb">
+                                    <span class="checkmark"></span>
+                                    BNB Chain
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="currency-selection">
+                            <h5>Select Currency:</h5>
+                            <div class="currency-options" id="currency-options">
+                                <button class="currency-btn active" data-currency="eth">ETH</button>
+                                <button class="currency-btn" data-currency="usdt">USDT</button>
+                                <button class="currency-btn" data-currency="usdc">USDC</button>
+                            </div>
+                        </div>
+
+                        <div class="purchase-details">
+                            <h5>Purchase Details</h5>
+                            
+                            <div class="pay-with-section">
+                                <label>Pay with <span id="selected-currency">ETH</span></label>
+                                <div class="amount-input-container">
+                                    <input type="number" placeholder="0.0" id="pay-amount" step="0.01">
+                                    <div class="currency-display" id="currency-display">ETH</div>
+                                </div>
+                            </div>
+
+                            <div class="receive-section">
+                                <label>You will receive:</label>
+                                <div class="receive-display" id="receive-amount">0.0 $MASK</div>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-primary purchase-btn" id="purchase-btn">
+                            <span id="purchase-btn-text">Buy Now</span>
+                        </button>
+
+                        <button class="btn btn-secondary how-to-buy-btn" id="how-to-buy-btn">
+                            How to Buy?
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="token" class="token">
+            <div class="container">
+                <h2>MetaMask Token Information</h2>
+                <div class="token-grid">
+                    <div class="token-card">
+                        <h3>Total Supply</h3>
+                        <p class="token-number">1,000,000,000</p>
+                        <span>$MASK</span>
+                        <p class="token-description">🔒 Fixed Supply — No additional minting, ensuring long-term scarcity and value stability.</p>
+                    </div>
+                    <div class="token-card">
+                        <h3>Inflation Rate</h3>
+                        <p class="token-number">0%</p>
+                        <span>No additional minting</span>
+                        <p class="token-description">Supply is permanently capped. No future inflation or dilution for token holders.</p>
+                    </div>
+                    <div class="token-card">
+                        <h3>Network</h3>
+                        <p class="token-number">Ethereum & BNB Smart Chain</p>
+                        <span>(ERC-20 / BEP-20)</span>
+                        <p class="token-description">Built on Ethereum and BNB Smart Chain, providing security, decentralization, and liquidity.</p>
+                    </div>
+                    <div class="token-card">
+                        <h3>Contract Address</h3>
+                        <p class="token-address">(To be published after Token Generation Event)</p>
+                        <span>Official announcement</span>
+                        <p class="token-description">📢 Official announcement will be made across all MetaMask channels before TGE.</p>
+                    </div>
+                </div>
+                <div class="token-utility">
+                    <h3>Token Utility</h3>
+                    <p>$MASK is the official governance token of the MetaMask ecosystem, giving holders a direct voice in shaping the future of the world's most widely used Web3 wallet.</p>
+                    <ul>
+                        <li><strong>✅ Governance Rights</strong><br>Vote on key proposals including protocol upgrades, feature rollouts, and fee structures.</li>
+                        <li><strong>✅ Staking & Rewards</strong><br>Stake $MASK to earn a share of ecosystem fees and benefit from treasury yield.</li>
+                        <li><strong>✅ Priority Access</strong><br>Get early access to new features, beta programs, and partner integrations.</li>
+                        <li><strong>✅ Treasury Participation</strong><br>Decide how community treasury funds are allocated to grow the ecosystem.</li>
+                        <li><strong>✅ Long-Term Alignment</strong><br>As MetaMask continues to expand, $MASK holders are the core decision-makers driving its evolution.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="governance" class="governance">
+            <div class="container">
+                <h2>Governance</h2>
+                <div class="governance-content">
+                    <div class="governance-text">
+                        <h3>Shape MetaMask's Future</h3>
+                        <p>$MASK token holders have the power to collectively decide the development direction of this platform with hundreds of millions of users.</p>
+                        <div class="governance-features">
+                            <div class="feature">
+                                <h4>Proposal Creation</h4>
+                                <p>Submit proposals for product features, partnerships, community grants, and more.</p>
+                            </div>
+                            <div class="feature">
+                                <h4>Voting Rights</h4>
+                                <p>Vote on all governance proposals based on your token holdings.</p>
+                            </div>
+                            <div class="feature">
+                                <h4>Treasury Management</h4>
+                                <p>Participate in decisions about community treasury (funded by transaction fees) usage for ecosystem development.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="governance-visual">
+                        <img src="91748.png" alt="Governance Structure">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="web3-services" class="web3-services">
+            <div class="container">
+                <h2>MetaMask Web3 Services</h2>
+                <p class="section-subtitle">Build and scale dapps with battle-tested infrastructure and powerful APIs across major networks like Ethereum, Linea, Polygon, and more. Access Ethereum and Linea Sepolia test networks for a controlled and risk-free testing environment.</p>
+                
+                <div class="services-hero">
+                    <img src="web3-services-hero.avif" alt="MetaMask Web3 Services">
+                </div>
+                
+                <div class="services-content">
+                    <h3>Features</h3>
+                    
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <h4>Comprehensive access to major blockchain networks</h4>
+                            <p>Connect to major networks and protocols. Build on scalable and reliable infrastructure from Infura with 99.9% uptime.</p>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <h4>Guarantee 100% uptime with failover support</h4>
+                            <p>If Infura API endpoints ever become unavailable, your dapps stay connected through our partners on the Decentralized Infrastructure Network (DIN).</p>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <h4>Ship faster with APIs that power MetaMask</h4>
+                            <p>Leverage the same APIs that power MetaMask's 30M+ users to build, test, and deploy your dapps with confidence.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="services-cta">
+                        <a href="https://docs.metamask.io/services" class="btn btn-primary" target="_blank">VIEW THE DOCS</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="web3-learning" class="web3-learning">
+            <div class="learning-background">
+                <img src="hero-image-desktop.png" alt="Web3 Learning Background">
+                <div class="learning-overlay">
+                    <div class="container">
+                        <h2>New to Web3?</h2>
+                        <p class="learning-subtitle">Through a series of interactive lessons, MetaMask Learn will show you what Web3 is, why it's important to you, and how to use MetaMask along the way.</p>
+                        <a href="https://learn.metamask.io/zh-CN?utm_source=metamask.io" class="btn btn-primary learning-btn" target="_blank">START LEARNING</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="metamask-usd" class="metamask-usd">
+            <div class="container">
+                <h2>MetaMask USD</h2>
+                <p class="section-subtitle">Your money. Your wallet. Seamlessly everywhere.</p>
+                
+                <div class="musd-content">
+                    <div class="musd-text">
+                        <h3>About MetaMask USD (mUSD)</h3>
+                        <p>MetaMask USD (mUSD) is a cryptocurrency stablecoin, launched by MetaMask in September 2025. Issued by Bridge, and powered by M0, mUSD is the first stablecoin created by a self-custodial wallet. A stablecoin is a type of token that's designed to maintain a steady value, by being pegged to less volatile assets like the US Dollar.</p>
+                    </div>
+                    
+                    <div class="musd-visual">
+                        <img src="mUSD_metamask_USD_3x.avif" alt="MetaMask USD">
+                        <div class="musd-buttons">
+                            <a href="https://metamask.io/price/metamask-usd" class="btn btn-primary" target="_blank">BUY MUSD</a>
+                            <a href="https://metamask.io/download" class="btn btn-secondary" target="_blank">SWAP TO MUSD</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="metamask-card" class="metamask-card">
+            <div class="container">
+                <h2>MetaMask Card</h2>
+                <p class="section-subtitle">Instant spending direct from your crypto wallet, anywhere Mastercard is accepted.</p>
+                
+                <div class="card-content">
+                    <div class="card-text">
+                        <h3>Use crypto for everyday purchases with MetaMask</h3>
+                        
+                        <div class="card-features">
+                            <div class="feature-item">
+                                <h4>✓ Seamless spending</h4>
+                                <p>Tap or checkout with wETH, EURe, GBPe, aUSDC, USDC, and USDT via Apple Pay or Google Pay.</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>✓ You're in control</h4>
+                                <p>Go bankless and maintain custody of tokens until you pay.</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>✓ Instant settlement</h4>
+                                <p>Lightning-fast, low-cost transactions powered by Linea.</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>✓ Rich onchain rewards</h4>
+                                <p>Get crypto cashback on every purchase and earn additional yield with Linea rewards when you tap into MetaMask's network of onchain and merchant partners.</p>
+                            </div>
+                        </div>
+                        
+                        <a href="https://portfolio.metamask.io/card?attributionId=19ad106a-7ea4-4f0e-89d2-87c6b06fb2b9&utm_source=metamask.io" class="btn btn-primary card-btn" target="_blank">GET META CARD</a>
+                    </div>
+                    
+                    <div class="card-visual">
+                        <div class="card-images">
+                            <img src="metamask-card-cRlVBuTL.webp" alt="MetaMask Card" class="card-image">
+                            <img src="metamask-metal-card-waitlist-zXx_ApUB.webp" alt="MetaMask Metal Card" class="card-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio-features" class="portfolio-features">
+            <div class="container">
+                <h2>All your assets, all your accounts, all in one place.</h2>
+                
+                <div class="features-grid-main">
+                    <div class="feature-grid-item">
+                        <h3>Buy and sell crypto</h3>
+                        <p>Go from cash to crypto in seconds.</p>
+                        <div class="feature-image">
+                            <img src="buy-sell-HBk8zLMk.webp" alt="Buy and sell crypto">
+                        </div>
+                        <a href="https://portfolio.metamask.io/buy" class="btn btn-primary feature-btn" target="_blank">BUY</a>
+                    </div>
+                    
+                    <div class="feature-grid-item">
+                        <h3>Swap and bridge tokens</h3>
+                        <p>Easily swap thousands of tokens across dozens of networks.</p>
+                        <div class="feature-image">
+                            <img src="swap-bridge-IboB3eEY.webp" alt="Swap and bridge tokens">
+                        </div>
+                        <a href="https://portfolio.metamask.io/swap" class="btn btn-primary feature-btn" target="_blank">SWAP</a>
+                    </div>
+                    
+                    <div class="feature-grid-item">
+                        <h3>Earn rewards</h3>
+                        <p>Stake your ETH and earn rewards while securing the Ethereum network.</p>
+                        <div class="feature-image">
+                            <img src="earn-o2nTC-UP.webp" alt="Earn rewards">
+                        </div>
+                        <a href="https://portfolio.metamask.io/stake" class="btn btn-primary feature-btn" target="_blank">STAKE</a>
+                    </div>
+                    
+                    <div class="feature-grid-item">
+                        <h3>Spend crypto IRL</h3>
+                        <p>Use MetaMask Card to make purchases with your crypto anywhere that Mastercard is accepted.</p>
+                        <div class="feature-image">
+                            <img src="spend-C1DE6l0_.webp" alt="Spend crypto IRL">
+                        </div>
+                        <a href="https://portfolio.metamask.io/card" class="btn btn-primary feature-btn" target="_blank">SPEND</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="security" class="security">
+            <div class="container">
+                <h2>Crypto's most secure wallet</h2>
+                <p class="section-subtitle">MetaMask features active threat monitoring, robust security partnerships, 24/7 support, and strong built-in protections that set the standard for wallet security.</p>
+                
+                <div class="security-content">
+                    <div class="security-credentials">
+                        <h3>Rated the 1st most secure wallet across all platforms by Coinspect.</h3>
+                        <div class="coinspect-image">
+                            <img src="security-coinspect.avif" alt="Coinspect Security Rating">
+                        </div>
+                    </div>
+                    
+                    <div class="security-features">
+                        <h3>Advanced security keeps you safe</h3>
+                        
+                        <div class="security-feature">
+                            <h4>Know what you're signing</h4>
+                            <p>Transparent, readable transactions give you insight into your interactions.</p>
+                        </div>
+                        
+                        <div class="security-feature">
+                            <h4>Phishing protection</h4>
+                            <p>Clear alerts when you encounter suspicious sites and links.</p>
+                        </div>
+                        
+                        <div class="security-feature">
+                            <h4>LavaMoat</h4>
+                            <p>Our open source toolset that secures JavaScript from supply chain attacks is free and available to everyone in the ecosystem.</p>
+                        </div>
+                        
+                        <div class="security-feature">
+                            <h4>Live threat surveillance</h4>
+                            <p>We proactively discover and flag emerging ecosystem threats and build protection into our app in real time.</p>
+                        </div>
+                        
+                        <div class="security-feature">
+                            <h4>Safer swaps</h4>
+                            <p>MetaMask swaps add a layer of protection from potentially malicious smart contracts.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="extend-metamask" class="extend-metamask">
+            <div class="container">
+                <h2>Extend MetaMask</h2>
+                <p class="section-subtitle">Explore hundreds of community-built Snaps that enable new features and extend MetaMask beyond Ethereum.</p>
+                
+                <div class="extend-content">
+                    <div class="extend-text">
+                        <h3>Snaps add new functionality to MetaMask</h3>
+                        
+                        <div class="snap-features">
+                            <div class="snap-feature">
+                                <h4>🔗 Use MetaMask on any network</h4>
+                                <p>Connect to non-EVM networks like Sui and Bitcoin.</p>
+                            </div>
+                            <div class="snap-feature">
+                                <h4>📊 Get deeper intel</h4>
+                                <p>Receive custom MetaMask alerts, add advanced phishing protection, and get additional insights into your transactions.</p>
+                            </div>
+                            <div class="snap-feature">
+                                <h4>💬 Expand your comms</h4>
+                                <p>Stay in the know with dapp notifications, web3 messaging, and support chat all in MetaMask.</p>
+                            </div>
+                            <div class="snap-feature">
+                                <h4>👥 Manage alternative wallet types</h4>
+                                <p>Support multi-party computation (MPC) wallets, enable account backups, and implement device 2FA.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="extend-visual">
+                        <img src="Hero_img_with_all_elements_shown.avif" alt="MetaMask Snaps Interface">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-list" id="faq-accordion"></div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <div class="contact-links">
+                    <a href="https://www.youtube.com/@metamask?sub_confirmation=1" class="contact-link">
+                        <img src="youtube.png" alt="YouTube">
+                        <span>YouTube</span>
+                    </a>
+                    <a href="https://discord.com/invite/consensys" class="contact-link">
+                        <img src="discord.webp" alt="Discord">
+                        <span>Discord</span>
+                    </a>
+                    <a href="https://www.instagram.com/metamask.io/" class="contact-link">
+                        <img src="instagram.webp" alt="Instagram">
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://x.com/MetaMask" class="contact-link">
+                        <img src="X.png" alt="X">
+                        <span>X</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="https://consensys.net" target="_blank">Consensys</a>
+                <span class="separator">•</span>
+                <a href="https://consensys.net/privacy-policy" target="_blank">Privacy Policy</a>
+                <span class="separator">•</span>
+                <a href="https://consensys.net/terms-of-use" target="_blank">Terms of Use</a>
+                <span class="separator">•</span>
+                <a href="https://consensys.net/contributor-license-agreement" target="_blank">Contributor License Agreement</a>
+                <span class="separator">•</span>
+                <a href="https://metamask.io/sitemap" target="_blank">Sitemap</a>
+                <span class="separator">•</span>
+                <a href="https://metamask.io/accessibility" target="_blank">Accessibility</a>
+            </div>
+            <div class="footer-copyright">
+                <p>©2025 MetaMask • A Consensys Formation</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="faq-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
