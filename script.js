@@ -93,7 +93,7 @@ if (presaleAddress) {
 let isWalletConnected = false;
 let selectedNetwork = 'ethereum';
 let selectedCurrency = 'eth';
-const maskPrice = 0.0075; // Updated price: $0.0075 per MASK
+const maskPrice = 0.0085; // Updated price: $0.0085 per MASK
 
 // Currency exchange rates to USD
 const currencyRates = {
@@ -399,7 +399,7 @@ function confirmPurchase() {
 
 // Countdown timer
 function initCountdown() {
-    const targetDate = new Date('September 30, 2025 00:00:00').getTime();
+    const targetDate = new Date('October 5, 2025 00:00:00').getTime();
     
     function updateCountdown() {
         const now = new Date().getTime();
