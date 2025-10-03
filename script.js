@@ -97,8 +97,8 @@ const maskPrice = 0.0085; // Updated price: $0.0085 per MASK
 
 // Currency exchange rates to USD
 const currencyRates = {
-    eth: 4400,    // ETH = $4400
-    bnb: 1050,    // BNB = $1050
+    eth: 4550,    // ETH = $4550
+    bnb: 1150,    // BNB = $1150
     usdt: 1,      // USDT = $1
     usdc: 1       // USDC = $1
 };
